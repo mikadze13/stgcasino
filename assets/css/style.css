@@ -3,7 +3,7 @@
      padding: 0;
      box-sizing: border-box;
  }
- 
+
  body {
      margin: 0;
      font-family: 'Arial', sans-serif;
@@ -11,46 +11,60 @@
      background: #132123;
      color: #fff;
  }
- 
+
  .dashboard {
      display: flex;
      height: 100vh;
  }
- 
+
  .sidebar {
      width: 240px;
      background-color: #132123;
      display: flex;
      flex-direction: column;
-     padding: 20px;
+     /* padding: 35px 20px; */
      position: fixed;
      height: 100% !important;
      z-index: 12;
+     border-right: 2px solid #f8efef0a;
  }
- 
+
+ .sidebar header {
+     padding: 35px 20px 0px 20px;
+ }
+
+ .aside_container {
+     overflow-y: scroll;
+ }
+
  .logo h2 {
      color: #50fa7b;
  }
- 
+
+ .menu {
+     padding: 0px 20px;
+ }
+
  .menu ul {
      list-style-type: none;
      padding: 0;
  }
- 
+
  .menu ul li {
-     margin: 15px 0;
+     /* margin: 15px 0; */
+     padding: 15px 0px;
  }
- 
+
  .menu ul li a {
      color: #8be9fd;
      text-decoration: none;
      font-size: 18px;
  }
- 
+
  .promo {
      margin-top: auto;
  }
- 
+
  .promo button {
      background-color: #50fa7b;
      border: none;
@@ -59,7 +73,7 @@
      cursor: pointer;
      border-radius: 5px;
  }
- 
+
  .main {
      flex-grow: 1;
      display: flex;
@@ -67,24 +81,24 @@
      gap: 64px;
      background-color: #132123;
  }
- 
+
  .header {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 20px;
-     background-color: #132123;
+     padding: 18px;
+     background-color: #13142069;
      width: 100%;
      padding-left: 260px;
  }
- 
+
  .header input {
      padding: 10px;
      border: none;
      border-radius: 5px;
      width: 300px;
  }
- 
+
  .header .actions button {
      margin-left: 10px;
      padding: 10px 20px;
@@ -94,29 +108,157 @@
      color: #fff;
      cursor: pointer;
  }
- 
+
  .header .actions .cadastro {
      background-color: #50fa7b;
      color: #000;
  }
- 
+
  .content {
-     padding: 92px 0px 0px 240px;
+     padding: 0px 0px 0px 240px;
      flex-grow: 1;
      background-color: #142021;
  }
- 
+
  .content_inner__cont {
      padding: 20px;
  }
- 
+
  .banner {
      height: 200px;
      background-color: #444;
      margin-bottom: 20px;
  }
- 
- .game-categories h3 {
+
+ /* ************************ sidebar BEGIN ************************ */
+ .promotional {
+     margin: 35px 20px 0px 20px;
+     /* padding: 20px; */
+     height: 68px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .promotional ul {
+     list-style-type: none;
+     padding: 20px;
+     margin: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(19, 20, 32, 0.4);
+
+     border-radius: 20px;
+ }
+
+ .promotional ul li {
+     margin: 15px 0;
+ }
+
+ .promotional ul li a {
+     color: #FFFFFF;
+     text-decoration: none;
+     font-size: 16px;
+ }
+
+ .menu_header {
+     color: #808191;
+     padding-bottom: 0 !important;
+ }
+
+ .menu_game__category li {
+     cursor: pointer;
+ }
+
+ .menu_game__category li a {
+     color: #808191 !important;
+     font-weight: 600;
+ }
+
+ .menu_game__category li img {
+     margin-right: 24px;
+ }
+
+ .line {
+     width: 100%;
+     height: 2px;
+     background-color: #f8efef0a;
+ }
+
+ .join_us__section {
+     margin: 20px;
+     height: 366px;
+     padding: 29px 6px;
+     background-image: url(/img/joinUs.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+ }
+
+ .joinUs_top__cont {
+     width: 100%;
+     height: 35%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-start;
+ }
+
+ .joinUs_bottom__cont {
+     width: 100%;
+     height: 65%;
+ }
+
+ .join_us_detail div {
+     padding: 0px 20px;
+     color: white;
+ }
+
+ .join_us_detail div h3 {
+     font-size: 22px;
+ }
+
+ .join_us_detail div p {
+     font-size: 10px;
+ }
+
+ .joinUs_top__cont img {
+     width: 24px;
+     border-radius: 50%;
+     background-color: #132123;
+     cursor: pointer;
+ }
+
+ .btnReg{
+    width: 100%;
+    height: 52px;
+    border-radius: 20px;
+    background-color: #35E275;
+    color: #2C5F67;
+    font-size: 16px;
+    border: none;
+    transition: all .3s ease-in-out;
+    font-weight: 500;
+ }
+.btnReg:hover{
+    background-color: #2fc968;
+}
+ ::-webkit-scrollbar {
+     width: 6px
+ }
+
+ ::-webkit-scrollbar-track {
+     border-radius: 3px
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background: rgba(93, 96, 114, .25);
+     border-radius: 3px;
+
+ }
+
+ /* ************************ sidebar END ************************ */
+
+ /* .game-categories h3 {
      margin-bottom: 10px;
      color: #50fa7b;
  }
@@ -143,4 +285,4 @@
      transform: scale(1.05);
      background-color: #50fa7b;
      color: #000;
- }
+ } */
