@@ -1,0 +1,157 @@
+.slots .container .row {
+    gap: 32px;
+}
+
+.page-heading h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.slot-categories ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.slot-categories ul li {
+    transition: all 0.3s ease;
+    list-style: none;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid #838286;
+    background-color: rgba(235, 255, 243, 0.05);
+}
+
+.slot-categories ul li a {
+    font-weight: 500;
+    font-size: 14px;
+    color: #838286;
+    text-decoration: none;
+}
+
+.slot-categories ul li:hover {
+    border-color: transparent;
+    background-color: #35E275;
+}
+
+.slot-categories ul li a:hover {
+    color: inherit;
+}
+
+.slot-categories ul li:hover a {
+    color: #2C5F67;
+}
+
+.slot-categories ul li.active {
+    border-color: transparent;
+    background-color: #3BFB82;
+}
+
+.slots .games-content {
+    width: 100%;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.slots .games-content .wrapper .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px 16px;
+}
+
+.slots .games-content .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slots-bg {
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.slots-card {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.slots-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slots-card .slots-name {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-size: 16px;
+    opacity: 0;
+    z-index: 9;
+    transition: opacity 0.5s;
+}
+
+.slots-card .slots-name h5 {
+    font-weight: bold;
+    color: white;
+}
+
+.slots-card .slots-name .thumbnail {
+    cursor: pointer;
+}
+
+.slots-card:hover .slots-name {
+    opacity: 1;
+}
+
+.slots-card:hover .slots-bg {
+    background-color: #3BFB82;
+    mix-blend-mode: multiply;
+    opacity: 1;
+}
+
+.show-more {
+    margin: 0 auto;
+}
+
+.show-more button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgba(235, 255, 243, 0.05);
+    color: white;
+    min-width: 120px;
+    border: 1px solid #838286;
+}
+
+.show-more button:hover {
+    background-color: #35E275;
+    border-color: transparent;
+}
+
+@media only screen and (min-width: 1815px) {
+    .slots .games-content .wrapper .cards {
+        grid-template-columns: repeat(7, 1fr);
+    }
+}
