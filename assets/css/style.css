@@ -97,9 +97,11 @@ body {
     flex-grow: 1;
     background-color: #142021;
 }
-.content_inner__cont{
+
+.content_inner__cont {
     padding: 20px;
 }
+
 .banner {
     height: 200px;
     background-color: #444;
@@ -134,4 +136,3 @@ body {
     background-color: #50fa7b;
     color: #000;
 }
-
