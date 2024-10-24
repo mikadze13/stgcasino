@@ -3,7 +3,7 @@
      padding: 0;
      box-sizing: border-box;
  }
- 
+
  body {
      margin: 0;
      font-family: 'Arial', sans-serif;
@@ -11,11 +11,11 @@
      background: #132123;
      color: #fff;
  }
- 
+
  .dashboard {
      display: flex;
  }
- 
+
  .sidebar {
      width: 240px;
      background-color: #132123;
@@ -29,39 +29,39 @@
      z-index: 12;
      border-right: 2px solid #f8efef0a;
  }
- 
+
  .sidebar header {
      padding: 35px 20px 0px 20px;
  }
- 
+
  .aside_container {
      overflow-y: scroll;
  }
- 
+
  .logo h2 {
      color: #50fa7b;
  }
- 
+
  .menu {
      padding: 0px 20px;
  }
- 
+
  .menu ul {
      list-style-type: none;
      padding: 0;
  }
- 
+
  .menu ul li {
      /* margin: 15px 0; */
      padding: 15px 0px;
  }
- 
+
  .menu ul li a {
      color: #8be9fd;
      text-decoration: none;
      font-size: 18px;
  }
- 
+
  .promo {
      margin-top: auto;
      display: flex;
@@ -72,7 +72,7 @@
      border-top: 2px solid #f8efef0a;
      height: 72px;
  }
- 
+
  .main {
      flex-grow: 1;
      display: flex;
@@ -80,7 +80,8 @@
      gap: 64px;
      background-color: #132123;
  }
- 
+
+ /* ***************************** header BEGIN ******************************/
  .header {
      display: flex;
      justify-content: space-between;
@@ -89,29 +90,60 @@
      background-color: #13142069;
      width: 100%;
  }
- 
+
  .header input {
-     padding: 10px;
+     padding: 10px 40px 10px 79px;
+     color: white;
      border: none;
      border-radius: 5px;
-     width: 300px;
+     height: 48px;
+     background: transparent;
+     outline: none;
  }
- 
- .header .actions button {
+
+ .header>div span {
+     top: 50%;
+     transform: translateY(-50%);
+     color: white;
+     padding: 10px;
+     width: 64px;
+     height: 48px;
+     border-radius: 20px;
+     background-color: #3BFB82;
+
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .header .actions button,
+ select {
      margin-left: 10px;
      padding: 10px 20px;
      border: none;
      border-radius: 5px;
-     background-color: #444;
+     background-color: transparent;
      color: #fff;
      cursor: pointer;
  }
- 
- .header .actions .cadastro {
-     background-color: #50fa7b;
-     color: #000;
+
+ .header .actions select {
+    padding-right:6px !important ;
  }
- 
+
+ .header .actions .cadastro {
+     background-color: #3BFB82;
+     color: #2C5F67;
+     font-weight: 500;
+     height: 48px; 
+     border-radius: 20px;
+ }
+ .header .actions .cadastro img{
+    padding-left: 9px;
+ }
+
+ /* ***************************** header EEND ******************************/
  .hero-content {
      flex-grow: 1;
      background-color: #142021;
@@ -119,18 +151,19 @@
      flex-direction: column;
      gap: 32px;
  }
- 
+
  .content_inner__cont {
      padding: 20px;
  }
- 
+
  .banner {
      height: 200px;
      background-color: #444;
      margin-bottom: 20px;
  }
+
  /* ************************ sidebar BEGIN ************************ */
- 
+
  .promotional {
      margin: 35px 20px 0px 20px;
      /* padding: 20px; */
@@ -139,7 +172,7 @@
      align-items: center;
      justify-content: center;
  }
- 
+
  .promotional ul {
      list-style-type: none;
      padding: 20px;
@@ -149,51 +182,51 @@
      background-color: rgba(19, 20, 32, 0.4);
      border-radius: 20px;
  }
- 
+
  .promotional ul li {
      margin: 15px 0;
  }
- 
+
  .promotional ul li a {
      color: #FFFFFF;
      text-decoration: none;
      font-size: 16px;
  }
- 
+
  .menu_header {
      color: #808191;
      padding-bottom: 0 !important;
  }
- 
+
  .menu_game__category li {
      cursor: pointer;
  }
- 
+
  .menu_game__category li a {
      color: #808191 !important;
      font-weight: 600;
  }
- 
+
  .menu_game__category li img {
      margin-right: 24px;
  }
- 
+
  .line {
      width: 100%;
      height: 2px;
      background-color: #f8efef0a;
  }
- 
+
  .join_us__section {
      margin: 20px;
      height: 366px;
      padding: 29px 6px;
-     background-image: url(/img/joinUs.svg);
+     background-image: url(/assets/icons/joinUs.svg);
      background-repeat: no-repeat;
      background-position: center;
      background-size: contain;
  }
- 
+
  .joinUs_top__cont {
      width: 100%;
      height: 35%;
@@ -201,32 +234,32 @@
      justify-content: flex-end;
      align-items: flex-start;
  }
- 
+
  .joinUs_bottom__cont {
      width: 100%;
      height: 65%;
  }
- 
+
  .join_us_detail div {
      padding: 0px 20px;
      color: white;
  }
- 
+
  .join_us_detail div h3 {
      font-size: 22px;
  }
- 
+
  .join_us_detail div p {
      font-size: 10px;
  }
- 
+
  .joinUs_top__cont img {
      width: 24px;
      border-radius: 50%;
      background-color: #132123;
      cursor: pointer;
  }
- 
+
  .btnReg {
      width: 100%;
      height: 52px;
@@ -238,30 +271,30 @@
      transition: all .3s ease-in-out;
      font-weight: 500;
  }
- 
+
  .btnReg:hover {
      background-color: #2fc968;
  }
- 
+
  .icon {
      color: #86868d;
      font-size: 24px;
      margin: 0 15px;
  }
- 
+
  .switch {
      position: relative;
      display: inline-block;
      width: 64px;
      height: 25px;
  }
- 
+
  .switch input {
      opacity: 0;
      width: 0;
      height: 0;
  }
- 
+
  .slider {
      position: absolute;
      cursor: pointer;
@@ -272,7 +305,7 @@
      background-color: #2c2f3a;
      border-radius: 50px;
  }
- 
+
  .slider:before {
      position: absolute;
      content: "";
@@ -284,32 +317,33 @@
      transition: 0.4s;
      border-radius: 10px;
  }
- 
+
  input:checked+.slider {
      background-color: #f0f3f61c;
  }
- 
+
  input:checked+.slider::before {
      left: 23px;
  }
- 
+
  input:checked+.slider:before {
      transform: translateX(25px);
      background-color: #00ff66;
  }
- 
+
  ::-webkit-scrollbar {
      width: 6px
  }
- 
+
  ::-webkit-scrollbar-track {
      border-radius: 3px
  }
- 
+
  ::-webkit-scrollbar-thumb {
      background: rgba(93, 96, 114, .25);
      border-radius: 3px;
  }
+
  /* ************************ sidebar END ************************ */
  /* .game-categories h3 {
      margin-bottom: 10px;

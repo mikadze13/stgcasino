@@ -14,14 +14,14 @@
         <aside class="sidebar">
             <div class="aside_container">
                 <header class="d-flex align-items-center justify-content-between logo">
-                    <img src="/img/Logo.svg" alt="logo" />
-                    <img src="/img/burger.svg" alt="burger" />
+                    <img src="/assets/icons/Logo.svg" alt="logo" />
+                    <img src="/assets/icons/burger.svg" alt="burger" />
                 </header>
 
                 <div class="promotional">
                     <ul class="d-flex align-items-center justify-content-around">
                         <li>
-                            <a href=""><img src="/img/USDicon.svg" alt="" /></a>
+                            <a href=""><img src="/assets/icons/USDicon.svg" alt="" /></a>
                         </li>
                         <li class="d-flex flex-column">
                             <a href="">Ganhe agora</a>
@@ -35,26 +35,26 @@
                     </ul>
                     <ul class="menu_game__category">
                         <li class="d-flex align-items-center">
-                            <img src="/img/Crash.svg" alt="Crash" /><a href="#">Crash</a>
+                            <img src="/assets/icons/Crash.svg" alt="Crash" /><a href="#">Crash</a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <img src="/img/Double.svg" alt="Double" /><a href="#">Double</a>
+                            <img src="/assets/icons/Double.svg" alt="Double" /><a href="#">Double</a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <img src="/img/Double.svg" alt="Mines" /><a href="#">Mines</a>
+                            <img src="/assets/icons/Double.svg" alt="Mines" /><a href="#">Mines</a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <img src="/img/Dice.svg" alt="Dice" /><a href="#">Dice</a>
+                            <img src="/assets/icons/Dice.svg" alt="Dice" /><a href="#">Dice</a>
                         </li>
                         <li class="d-flex align-items-center">
-                            <img src="/img/Tower.svg" alt="Tower" /><a href="#">Tower</a>
+                            <img src="/assets/icons/Tower.svg" alt="Tower" /><a href="#">Tower</a>
                         </li>
                     </ul>
                     <div class="line"></div>
                 </nav>
                 <section class="join_us__section">
                     <div class="joinUs_top__cont">
-                        <img src="/img/close.svg" alt="close" />
+                        <img src="/assets/icons/close.svg" alt="close" />
                     </div>
                     <div class="joinUs_bottom__cont">
                         <div class="join_us_detail">
@@ -68,24 +68,32 @@
                 </section>
             </div>
             <section class="promo">
-                <img src="/img/night.svg" alt="night" />
+                <img src="/assets/icons/night.svg" alt="night" />
 
                 <label class="switch">
             <input type="checkbox" id="toggle" />
             <span class="slider"></span>
           </label>
 
-                <img src="/img/download.svg" alt="download" />
+                <img src="/assets/icons/download.svg" alt="download" />
             </section>
         </aside>
 
         <main class="main">
-            <header class="header">
-                <input type="search" placeholder="" aria-label="Search" />
-                <div class="actions">
-                    <button>EN</button>
+            <header class="header"> 
+                <div class="position-relative d-inline-block">
+                    <input type="text" class="searchInp" placeholder="ძებნა...">
+                    <span class="position-absolute ">
+                        <img src="/assets/icons/search.svg" alt="">
+                    </span>
+                </div>
+                
+                <div class="actions"> 
+                     <select class="bg-transparent">
+                        <option value="" >EN</option>
+                     </select>
                     <button>Entrar</button>
-                    <button class="cadastro">Cadastrar</button>
+                    <button class="cadastro">Cadastrar <img src="/assets/icons/cloud-download.svg" alt="download"></button>
                 </div>
             </header>
             <section class="hero-content">
