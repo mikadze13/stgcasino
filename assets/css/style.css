@@ -14,7 +14,6 @@
  
  .dashboard {
      display: flex;
-     height: 100vh;
  }
  
  .sidebar {
@@ -22,6 +21,10 @@
      background-color: #132123;
      display: flex;
      flex-direction: column;
+     /* padding: 35px 20px; */
+     position: sticky;
+     top: 0;
+     left: 0;
      height: 100% !important;
      z-index: 12;
      border-right: 2px solid #f8efef0a;
@@ -85,7 +88,6 @@
      padding: 18px;
      background-color: #13142069;
      width: 100%;
-     padding-left: 260px;
  }
  
  .header input {
@@ -110,10 +112,12 @@
      color: #000;
  }
  
- .content {
-     padding: 0px 0px 0px 240px;
+ .hero-content {
      flex-grow: 1;
      background-color: #142021;
+     display: flex;
+     flex-direction: column;
+     gap: 32px;
  }
  
  .content_inner__cont {
