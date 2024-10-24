@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('.slick-carousel').slick({
-        slidesToShow: 7, // Default for large screens
+        slidesToShow: 7,
         slidesToScroll: 1,
-        arrows: false, // Disable default arrows
+        arrows: false, 
         infinite: true,
         responsive: [
             {
@@ -36,7 +36,7 @@ $(document).ready(function () {
         ]
     });
 
-    // Custom buttons functionality
+    
     $('#nextButton').on('click', function () {
         $('.slick-carousel').slick('slickNext');
     });
@@ -49,14 +49,14 @@ $(document).ready(function () {
 // banner carousel 
 $(document).ready(function () {
     $('.banner').slick({
-        slidesToShow: 1, // Default for large screens
+        slidesToShow: 1, 
         slidesToScroll: 1,
-        arrows: false, // Disable default arrows
+        arrows: false,  
         infinite: true
         
     });
 
-    // Custom buttons functionality
+    
     $('#bannerNextButton').on('click', function () {
         $('.banner').slick('slickNext');
     });
