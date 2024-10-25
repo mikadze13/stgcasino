@@ -175,16 +175,17 @@ select {
 }
 
 /* ************************ personal Categories BEGIN ***************************** */
-.personal-categories{
+.personal-categories {
     padding: 0 12px;
 }
+
 .personal-categories div {
     padding: 24px 16px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     border-bottom: 2px solid transparent;
 }
- 
+
 
 .personal-categories div.active {
     border-bottom: 2px solid #1BB96B;
@@ -561,59 +562,38 @@ section.main-carousels {
     padding: 0 16px;
 }
 
-/*  */
-/* .game-categories h3 {
-     margin-bottom: 10px;
-     color: #50fa7b;
- }
- 
- .games {
-     display: flex;
-     gap: 20px;
- }
- 
- .game {
-     width: 150px;
-     height: 100px;
-     background-color: #1a1a1a;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     border-radius: 10px;
-     cursor: pointer;
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     transition: transform 0.2s;
- }
- 
- .game:hover {
-     transform: scale(1.05);
-     background-color: #50fa7b;
-     color: #000;
- } */
-
 /* *********************************** LOGIN REGISTER **************************  */
-.login-box { 
+.login-box {
     border-radius: 15px;
     padding: 20px;
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
-/* .login-box input, #registerForm input */
-.login-box form label, #registerForm form label{
+
+.login-box form label,
+#registerForm form label {
     display: block;
     text-align: left;
     margin-bottom: -7px;
     color: white;
 }
-.authmodalBody{
+
+.authmodalBody {
     background: linear-gradient(180deg, #5e3eaf, #3c2975);
+    border-radius: 20px;
 }
+
+.auth_modal__content {
+    background: transparent !important;
+    border-radius: 20px !important;
+}
+
 .tab-buttons {
     display: flex;
     justify-content: space-between;
-    background: #20153a;
-    border-radius: 30px;
-    padding: 5px; 
+    background: rgba(0, 0, 0, .3);
+    border-radius: 18px;
+    padding: 6px 4px;
     margin-bottom: 22px;
 }
 
@@ -629,10 +609,12 @@ section.main-carousels {
 }
 
 .tab-buttons .active {
-    background: rgba(255,255,255,.2);
+    background: rgba(255, 255, 255, .2);
     color: white !important;
 }
-.login-box input, #registerForm input{ 
+
+.login-box input,
+#registerForm input {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
@@ -641,9 +623,11 @@ section.main-carousels {
     box-sizing: border-box;
     font-size: 14px;
     background-color: #fff;
-    color: #333; 
+    color: #333;
+    outline: none;
 }
-.login-btn { 
+
+.login-btn {
     width: 100%;
     height: 50px;
     line-height: 48px;
@@ -653,7 +637,7 @@ section.main-carousels {
     font-size: 15px;
     letter-spacing: -.25px;
     font-weight: 800;
-    background:#3F3DFE;
+    background: #3F3DFE;
     color: white;
     outline: none;
     border: none;
@@ -663,10 +647,36 @@ section.main-carousels {
     transition: .3s all;
 }
 
-.login-btn:hover {
+/* .login-btn:hover {
     background-color: #3c3aff;
+} */
+#registerBtn,
+#loginBtn {
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s all;
+    font-size: 13px;
+    letter-spacing: -.3px;
+    font-weight: 700;
+    color: white;
+    background: initial;
+    display: inline-block;
+    margin: 0 2px;
 }
 
+#registerBtn.active,
+#loginBtn.active { 
+    background: rgba(255, 255, 255, .2);
+}
+#registerBtn:hover, #loginBtn:hover{
+    background: rgba(255, 255, 255, .2);
+}
 .login_footer-text {
     margin-top: 15px;
     font-size: 14px;
@@ -815,6 +825,7 @@ footer {
 }
 
 @media (min-width: 1440px) {
+
     .container,
     .container-lg,
     .container-md,
