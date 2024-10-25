@@ -88,7 +88,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
+    padding: 18px 70px 18px 70px;
     background-color: #13142069;
     width: 100%;
 }
@@ -174,7 +174,32 @@ select {
     width: 100%;
 }
 
+/* ************************ personal Categories BEGIN ***************************** */
+.personal-categories{
+    padding: 0 12px;
+}
+.personal-categories div {
+    padding: 24px 16px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+ 
 
+.personal-categories div.active {
+    border-bottom: 2px solid #1BB96B;
+    color: #1BB96B;
+}
+
+.category-item {
+    color: #808792;
+}
+
+.category-item img {
+    margin-right: 10px;
+}
+
+/* ************************ personal Categories END ******************************** */
 /* ************************ sidebar BEGIN ************************ */
 
 .promotional {
@@ -417,15 +442,15 @@ input:checked+.slider:before {
     background-color: #00ff66;
 }
 
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 6px
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     border-radius: 3px
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: rgba(93, 96, 114, .25);
     border-radius: 3px;
 }
@@ -436,7 +461,7 @@ input:checked+.slider:before {
 section.main-carousels {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 42px;
     padding: 0 64px 64px 64px;
 }
 
@@ -536,7 +561,7 @@ section.main-carousels {
     padding: 0 16px;
 }
 
-
+/*  */
 /* .game-categories h3 {
      margin-bottom: 10px;
      color: #50fa7b;
@@ -566,6 +591,96 @@ section.main-carousels {
      color: #000;
  } */
 
+/* *********************************** LOGIN REGISTER **************************  */
+.login-box { 
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    text-align: center; 
+}
+/* .login-box input, #registerForm input */
+.login-box form label, #registerForm form label{
+    display: block;
+    text-align: left;
+    margin-bottom: -7px;
+    color: white;
+}
+.authmodalBody{
+    background: linear-gradient(180deg, #5e3eaf, #3c2975);
+}
+.tab-buttons {
+    display: flex;
+    justify-content: space-between;
+    background: #20153a;
+    border-radius: 30px;
+    padding: 5px; 
+    margin-bottom: 22px;
+}
+
+.tab-buttons button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    color: #aaa;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.tab-buttons .active {
+    background: rgba(255,255,255,.2);
+    color: white !important;
+}
+.login-box input, #registerForm input{ 
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #fff;
+    color: #333; 
+}
+.login-btn { 
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    float: left;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: -.25px;
+    font-weight: 800;
+    background:#3F3DFE;
+    color: white;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    transition: .3s all;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.login-btn:hover {
+    background-color: #3c3aff;
+}
+
+.login_footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.login_footer-text a {
+    color: #4e4bff;
+    text-decoration: none;
+}
+
+.login_footer-text a:hover {
+    text-decoration: underline;
+}
 
 /* footer */
 
