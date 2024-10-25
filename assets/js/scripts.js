@@ -164,3 +164,104 @@ $(document).ready(function() {
         $('.banner').slick('slickPrev');
     });
 });
+
+// active items
+function setActive(itemId) {
+    $('.category-item').removeClass('active');
+    $('#' + itemId).addClass('active');
+
+    $('.category-item').removeClass('active');
+    $('.category-item img').css('filter', 'none');
+
+    $('#' + itemId).addClass('active');
+    $('#' + itemId).find('img').css('filter', 'invert(27%) sepia(85%) saturate(533%) hue-rotate(95deg) brightness(95%) contrast(90%)');
+}
+
+// login register logic
+$(document).ready(function () {
+    $('#registerBtn').click(function () {
+        $('#loginForm').hide();
+        $('#registerForm').show();
+        $('#authModalLabel').text('Register');
+        $('#loginBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#loginBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('#loginBtn').click(function () {
+        $('#registerForm').hide();
+        $('#loginForm').show();
+        $('#authModalLabel').text('Login');
+        $('#registerBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#registerBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+function setActive(itemId) {
+    $('.category-item').removeClass('active');
+    $('#' + itemId).addClass('active');
+
+    $('.category-item').removeClass('active');
+    $('.category-item img').css('filter', 'none');
+
+    $('#' + itemId).addClass('active');
+    $('#' + itemId).find('img').css('filter', 'invert(27%) sepia(85%) saturate(533%) hue-rotate(95deg) brightness(95%) contrast(90%)');
+}
+
+// login register logic
+$(document).ready(function () {
+    $('#registerBtn').click(function () {
+        $('#loginForm').hide();
+        $('#registerForm').show();
+        $('#authModalLabel').text('Register');
+        $('#loginBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#loginBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('#loginBtn').click(function () {
+        $('#registerForm').hide();
+        $('#loginForm').show();
+        $('#authModalLabel').text('Login');
+        $('#registerBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#registerBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+function setActive(itemId) {
+    $('.category-item').removeClass('active');
+    $('#' + itemId).addClass('active');
+
+    $('.category-item').removeClass('active');
+    $('.category-item img').css('filter', 'none');
+
+    $('#' + itemId).addClass('active');
+    $('#' + itemId).find('img').css('filter', 'invert(27%) sepia(85%) saturate(533%) hue-rotate(95deg) brightness(95%) contrast(90%)');
+}
+
+// login register logic
+$(document).ready(function () {
+    $('#registerBtn').click(function () {
+        $('#loginForm').hide();
+        $('#registerForm').show();
+        $('#authModalLabel').text('Register');
+        $('#loginBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#loginBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('#loginBtn').click(function () {
+        $('#registerForm').hide();
+        $('#loginForm').show();
+        $('#authModalLabel').text('Login');
+        $('#registerBtn').removeClass('active-btn');
+        $(this).addClass('active-btn');
+        $('#registerBtn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
