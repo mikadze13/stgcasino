@@ -635,6 +635,69 @@ footer {
     text-align: left;
 }
 
+
+/* სლოტის თამაში  */
+
+.game-frame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 600px;
+    padding: 0 20px 60px 20px;
+    background-color: rgba(85, 85, 85, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.frame-controls {
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.frame-controls button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.frame-controls .right-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.frame-controls button svg {
+    width: 24px;
+    fill: #00ff66;
+}
+
+.frame-controls .right-controls .fullscreen svg {
+    width: 20px;
+}
+
+.game-iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (min-width: 1440px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1440px !important;
+    }
+}
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
