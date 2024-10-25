@@ -399,6 +399,23 @@
         function markFavorite() {
             alert("Added to favorites!");
         }
+        document.addEventListener('DOMContentLoaded', function() {
+            const slotCards = document.querySelectorAll('.slots-card');
+
+            slotCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    window.location.href = 'http://127.0.0.1:5500/pages/game.html';
+                });
+            });
+
+            const allGames = document.querySelectorAll('.custom-controls_left');
+
+            allGames.forEach(game => {
+                game.addEventListener('click', function() {
+                    window.location.href = 'http://127.0.0.1:5500/pages/slots.html';
+                });
+            });
+        });
     </script>
 </body>
 

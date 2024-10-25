@@ -538,6 +538,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="/assets/js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slotCards = document.querySelectorAll('.slots-card');
+
+            slotCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    window.location.href = 'http://127.0.0.1:5500/pages/game.html';
+                });
+            });
+
+            const allGames = document.querySelectorAll('.custom-controls_left');
+
+            allGames.forEach(game => {
+                game.addEventListener('click', function() {
+                    window.location.href = 'http://127.0.0.1:5500/pages/slots.html';
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

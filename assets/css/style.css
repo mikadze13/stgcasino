@@ -370,6 +370,8 @@ select {
 }
 
 .slots-card .slots-name h5 {
+    text-align: center;
+    text-wrap: nowrap;
     font-weight: bold;
     color: white;
 }
@@ -380,6 +382,16 @@ select {
 
 .slots-card:hover .slots-name {
     opacity: 1;
+}
+
+.slots-bg {
+    transition: opacity 0.5s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .slots-card:hover .slots-bg {
@@ -708,5 +720,25 @@ footer {
 @media (max-width: 480px) {
     .footer-text p {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    section.slots .games-content .wrapper .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    section.slots .games-content .wrapper .cards {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px 15px
+    }
+}
+
+@media only screen and (min-width: 1540px) {
+    section.slots .games-content .wrapper .cards {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px 15px
     }
 }
