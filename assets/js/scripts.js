@@ -265,3 +265,55 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
+// რესპონსივ ასიდე
+// $(document).ready(function () {
+let count = 0
+// let aside = $(".sidebar")
+let main = $(".main")
+$(".responsive_icon").click(function () {
+    count++
+    if (count % 2 != 0) {
+        $('.sidebar').addClass('show');
+        // $('.sidebar').css('cssText', 'display: flex !important;');
+        main.css('width', '100%)')
+        main.css('margin-left', '0px')
+    }
+    // else {
+    //     $('.sidebar').removeClass('show');
+    //     // $('.sidebar').css('cssText', 'display: none !important;');
+    //     main.css('width', '100%')
+    //     main.css('margin-left', '0')
+    // }
+
+})
+$(".aside_burger").click(function () {
+    $('.sidebar').removeClass('show');
+    // $('.sidebar').css('cssText', 'display: none !important;');
+    main.css('width', '100%')
+    main.css('margin-left', '0')
+})
+// $(window).resize(function () {
+//     if ($(window).width() < 1200) {
+         
+//     }
+//     console.log('yle')
+// })
+$(window).resize(function () {
+    let sidebar = $(".sidebar")
+    if ($(window).width() > 1200) { // მაგალითად, 768px-ზე მეტისას სიდბარი ჩანს
+        sidebar.addClass('show');
+        // sidebar.css('cssText', 'display: flex !important;');
+        main.css('width', 'calc(100% - 240px)');
+        main.css('margin-left', '240px');
+    } else {
+        if (count % 2 === 0) { // იმალება, თუ არ არის აქტიური
+            sidebar.removeClass('show');
+            // sidebar.css('cssText', 'display: none !important;');
+            main.css('width', '100%');
+            main.css('margin-left', '0');
+        }
+    }
+});
+
+// })
