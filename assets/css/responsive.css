@@ -37,3 +37,37 @@
         padding: 10px 10px;
     }
 }
+@media screen and (max-width:575px){
+    .banner div{
+        height: 100%;
+    }
+    .main-carousels .carousel-container{
+        height: 283px;
+    }
+    .header input{
+        width: 172px;
+        padding: 10px 0px 10px 51px; 
+    }
+    .header>div span{
+        width: 48px;
+    }
+    .header .actions .cadastro img{
+        padding-left: 0px;
+    }
+    .footer-first{
+        flex-wrap: wrap;
+    }
+         
+}
+@media screen and (max-width:425px){
+    .position-relative.d-inline-block.searchInpCont {
+        display: none !important;
+    }
+    .personal-categories{
+        overflow-x:scroll ;
+        
+    }
+    ::-webkit-scrollbar {
+        height: 4px
+    }
+}
