@@ -91,17 +91,6 @@ body {
     font-size: 18px;
 }
 
-.promo {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #1F2128;
-    padding: 10px 20px;
-    border-top: 2px solid #f8efef0a;
-    height: 72px;
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -413,11 +402,42 @@ select {
     margin: 0px 5px;
 }
 
+.slots-card .slots-thumbnail {
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    justify-content: space-between;
+    background-color: #413636;
+    border-radius: 12px;
+}
+
+.slots-card .slots-thumbnail p {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.slots-card .slots-thumbnail img {
+    width: 24px;
+}
+
 .slots-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.slots-thumbnail.demo {
+    display: none;
+}
+
+.slots-card .slots-name.demo .slots-thumbnail.demo {
+    background-color: #d93d3d;
+    display: block;
 }
 
 .slots-card .slots-name {
@@ -827,7 +847,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 600px;
+    height: 85vh;
     padding: 0 20px 60px 20px;
     background-color: rgba(85, 85, 85, 0.1);
     border-radius: 8px;

@@ -1,96 +1,96 @@
 // top games (pirveli karuseli)
-$(document).ready(function () {
+$(document).ready(function() {
     $('.topgames').slick({
-        slidesToShow: 6,
+        slidesToShow: 8,
         slidesToScroll: 8,
         arrows: false,
         infinite: true,
         responsive: [{
-            breakpoint: 1441,
-            settings: {
-                slidesToShow: 6,
-                slidesToScroll: 6
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 4
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
         ]
     });
 
 
-    $('#nextButton-top').on('click', function () {
+    $('#nextButton-top').on('click', function() {
         $('.topgames').slick('slickNext');
     });
 
-    $('#prevButton-top').on('click', function () {
+    $('#prevButton-top').on('click', function() {
         $('.topgames').slick('slickPrev');
     });
 });
 
 // recently played (meore karuseli)
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('.recentlyplayed').slick({
         slidesToShow: 6,
         slidesToScroll: 8,
         arrows: false,
         infinite: true,
         responsive: [{
-            breakpoint: 1441,
-            settings: {
-                slidesToShow: 6,
-                slidesToScroll: 6
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 4
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
         ]
     });
 
 
-    $('#nextButton-rec').on('click', function () {
+    $('#nextButton-rec').on('click', function() {
         $('.recentlyplayed').slick('slickNext');
     });
 
-    $('#prevButton-rec').on('click', function () {
+    $('#prevButton-rec').on('click', function() {
         $('.recentlyplayed').slick('slickPrev');
     });
 });
@@ -98,55 +98,55 @@ $(document).ready(function () {
 
 // partners (mesame karuseli)
 
-$(document).ready(function () {
+$(document).ready(function() {
     $('.prov').slick({
-        slidesToShow: 6,
+        slidesToShow: 8,
         slidesToScroll: 8,
         arrows: false,
         infinite: true,
         responsive: [{
-            breakpoint: 1441,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 6
+                breakpoint: 1441,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 6
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 4
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 320,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
         ]
     });
 
 
-    $('#nextButton-prov').on('click', function () {
+    $('#nextButton-prov').on('click', function() {
         $('.prov').slick('slickNext');
     });
 
-    $('#prevButton-prov').on('click', function () {
+    $('#prevButton-prov').on('click', function() {
         $('.prov').slick('slickPrev');
     });
 });
 
 // banner carousel 
-$(document).ready(function () {
+$(document).ready(function() {
     $('.banner').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -156,11 +156,11 @@ $(document).ready(function () {
     });
 
 
-    $('#bannerNextButton').on('click', function () {
+    $('#bannerNextButton').on('click', function() {
         $('.banner').slick('slickNext');
     });
 
-    $('#bannerPrevButton').on('click', function () {
+    $('#bannerPrevButton').on('click', function() {
         $('.banner').slick('slickPrev');
     });
 });
@@ -178,8 +178,8 @@ function setActive(itemId) {
 }
 
 // login register logic
-$(document).ready(function () {
-    $('#registerBtn').click(function () {
+$(document).ready(function() {
+    $('#registerBtn').click(function() {
         $('#loginForm').hide();
         $('#registerForm').show();
         $('#authModalLabel').text('Register');
@@ -189,7 +189,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    $('#loginBtn').click(function () {
+    $('#loginBtn').click(function() {
         $('#registerForm').hide();
         $('#loginForm').show();
         $('#authModalLabel').text('Login');
@@ -199,6 +199,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
 function setActive(itemId) {
     $('.category-item').removeClass('active');
     $('#' + itemId).addClass('active');
@@ -211,8 +212,8 @@ function setActive(itemId) {
 }
 
 // login register logic
-$(document).ready(function () {
-    $('#registerBtn').click(function () {
+$(document).ready(function() {
+    $('#registerBtn').click(function() {
         $('#loginForm').hide();
         $('#registerForm').show();
         $('#authModalLabel').text('Register');
@@ -222,7 +223,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    $('#loginBtn').click(function () {
+    $('#loginBtn').click(function() {
         $('#registerForm').hide();
         $('#loginForm').show();
         $('#authModalLabel').text('Login');
@@ -232,6 +233,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 });
+
 function setActive(itemId) {
     $('.category-item').removeClass('active');
     $('#' + itemId).addClass('active');
@@ -244,8 +246,8 @@ function setActive(itemId) {
 }
 
 // login register logic
-$(document).ready(function () {
-    $('#registerBtn').click(function () {
+$(document).ready(function() {
+    $('#registerBtn').click(function() {
         $('#loginForm').hide();
         $('#registerForm').show();
         $('#authModalLabel').text('Register');
@@ -255,7 +257,7 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    $('#loginBtn').click(function () {
+    $('#loginBtn').click(function() {
         $('#registerForm').hide();
         $('#loginForm').show();
         $('#authModalLabel').text('Login');
@@ -267,23 +269,23 @@ $(document).ready(function () {
 });
 
 // რესპონსივ ასიდე 
-let count = 0 
+let count = 0
 let main = $(".main")
-$(".responsive_icon").click(function () {
+$(".responsive_icon").click(function() {
     count++
     if (count % 2 != 0) {
         $('.sidebar').addClass('show');
         // $('.sidebar').css('cssText', 'display: flex !important;');
         main.css('width', '100%)')
         main.css('margin-left', '0px')
-    } 
+    }
 })
-$(".aside_burger").click(function () {
+$(".aside_burger").click(function() {
     $('.sidebar').removeClass('show');
     main.css('width', '100%')
     main.css('margin-left', '0')
 })
-$(window).resize(function () {
+$(window).resize(function() {
     let sidebar = $(".sidebar")
     if ($(window).width() > 1200) {
         sidebar.addClass('show');
@@ -296,4 +298,4 @@ $(window).resize(function () {
             main.css('margin-left', '0');
         }
     }
-});  
+});
