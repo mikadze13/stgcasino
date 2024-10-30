@@ -19,7 +19,7 @@ body {
 .sidebar {
     width: 240px;
     background-color: #132123;
-    display: flex ;
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -31,16 +31,21 @@ body {
     opacity: 1;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.aside_burger_desktop{
+
+.aside_burger_desktop {
     display: flex;
 }
-.responsive_icon{
+
+.responsive_icon {
     display: none;
     cursor: pointer;
 }
-.aside_burger{
+
+.aside_burger {
     display: none;
 }
+
+
 /* .mobile_aside{ 
         width: 100%;
         background-color: #132123;
@@ -53,6 +58,7 @@ body {
         z-index: 9;
         border-right: 2px solid #f8efef0a; 
 } */
+
 .sidebar header {
     padding: 35px 20px 0px 20px;
 }
@@ -141,7 +147,13 @@ body {
     justify-content: center;
 }
 
-.header .actions button,
+.header .actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header .actions button:not(.user-button),
 select {
     margin-left: 10px;
     padding: 10px 20px;
@@ -198,7 +210,9 @@ select {
     width: 100%;
 }
 
+
 /* ************************ personal Categories BEGIN ***************************** */
+
 .personal-categories {
     padding: 0 12px;
 }
@@ -209,7 +223,6 @@ select {
     transition: all .3s ease-in-out;
     border-bottom: 2px solid transparent;
 }
-
 
 .personal-categories div.active {
     border-bottom: 2px solid #1BB96B;
@@ -224,7 +237,10 @@ select {
     margin-right: 10px;
 }
 
+
 /* ************************ personal Categories END ******************************** */
+
+
 /* ************************ sidebar BEGIN ************************ */
 
 .promotional {
@@ -586,7 +602,9 @@ section.main-carousels {
     padding: 0 16px;
 }
 
+
 /* *********************************** LOGIN REGISTER **************************  */
+
 .login-box {
     border-radius: 15px;
     padding: 20px;
@@ -671,9 +689,11 @@ section.main-carousels {
     transition: .3s all;
 }
 
+
 /* .login-btn:hover {
     background-color: #3c3aff;
 } */
+
 #registerBtn,
 #loginBtn {
     height: 38px;
@@ -695,12 +715,15 @@ section.main-carousels {
 }
 
 #registerBtn.active,
-#loginBtn.active { 
+#loginBtn.active {
     background: rgba(255, 255, 255, .2);
 }
-#registerBtn:hover, #loginBtn:hover{
+
+#registerBtn:hover,
+#loginBtn:hover {
     background: rgba(255, 255, 255, .2);
 }
+
 .login_footer-text {
     margin-top: 15px;
     font-size: 14px;
@@ -715,6 +738,7 @@ section.main-carousels {
 .login_footer-text a:hover {
     text-decoration: underline;
 }
+
 
 /* footer */
 
@@ -848,8 +872,166 @@ footer {
     border: none;
 }
 
-@media (min-width: 1440px) {
 
+/* table */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2c3e50;
+}
+
+th,
+td {
+    color: whitesmoke;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #12332a;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr {
+    background-color: rgb(19 27 34);
+}
+
+tr:hover {
+    background-color: #4c5b70;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.accepted {
+    color: #3BFB82;
+}
+
+.rejected {
+    color: #e74c3c;
+}
+
+.pending {
+    color: #f1c40f;
+}
+
+.amount {
+    font-weight: bold;
+    color: #3BFB82;
+}
+
+
+/* user logged - in */
+
+.logged-in {
+    border: 1px solid white;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #132123;
+}
+
+.logged-in .balance-amount {
+    flex: 0.65;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logged-in .deposit {
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.35;
+    border-radius: 20px;
+    background-color: #2b3839;
+    font-size: 16px;
+}
+
+.logged-in .deposit svg,
+.logged-in .balance-amount .refresh svg {
+    width: 16px;
+    ;
+}
+
+.user-button-wrapper {
+    position: relative;
+}
+
+.user-button {
+    background-color: #00ff66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.user-button img {
+    height: 16px;
+    width: 16px;
+}
+
+.tooltip-user-menu {
+    z-index: 999;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #131b22;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-user-menu.active {
+    display: block;
+}
+
+.tooltip-user-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tooltip-user-menu ul li {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tooltip-user-menu ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tooltip-user-menu ul li img {
+    margin-right: 10px;
+    height: 16px;
+    width: 16px;
+}
+
+@media (min-width: 1440px) {
     .container,
     .container-lg,
     .container-md,
