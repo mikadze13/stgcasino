@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+}
+
+.side-menu {
+    width: 315px;
+    background-color: #1d202b;
+    padding: 59px 20px;
+    position: fixed;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    background-image: -o-linear-gradient(#222528 2%, #191B1E 13%);
+    background-image: linear-gradient(#222528 2%, #191B1E 13%);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .06);
+}
+
+
+.menu-btn {
+    display: block;
+    background-color: transparent;
+    color: #b0b3b8;
+    border: none;
+    padding: 15px 0px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-btn i {
+    margin-right: 10px;
+}
+
+.menu-btn.active {
+    color: #005ffe;
+    background-color: #17141a;
+    border-left: 7px solid #009539 !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.termsConditionContainer {
+    margin-left: 355px;
+    padding: 29px 12px;
+    background: #151820;
+    color: #333;
+    min-height: 100vh;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.termsConditionContainer.active {
+    display: block;
+}
+
+.conditionContainer_inner {
+    width: 100%; 
+    height: 100vh;
+    /* border-radius: 8px; */
+    overflow-y: scroll; 
+}
+
+.conditionContainer_inner::-webkit-scrollbar {
+    display: none; 
+}
+
+.htmlContent p {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 15px;
+    letter-spacing: -.2px;
+    line-height: 30px;
+    color: white;
+}
+.category_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 20px;
+}
+.category_header h2{
+    border-left: 7px solid #009539;
+    padding-left: 13px; 
+    color: white;
+    /* margin-top: -19px; */
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+.print_pdf{
+    display: flex;
+    align-items: center;
+}
+.print_pdf img{
+    width: 20px;
+    padding-left: 10px;
+} 
+@media screen and (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+
+    .side_menu__items {
+        margin-top: 20px;
+        padding: 0px 10px;
+    }
+
+    .menu-btn {
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .termsConditionContainer {
+        margin-left: 0;
+        padding: 26px 0px;
+    }
+
+    #home {
+        width: 100%;
+    }
+
+    .side-menu {
+        display: none !important;
+    }
+
+}

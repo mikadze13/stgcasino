@@ -1,144 +1,337 @@
 .slots .container .row {
-    gap: 32px;
+  gap: 32px;
 }
 
 .page-heading h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.slot-categories {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slot-categories ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 16px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
 }
 
 .slot-categories ul li {
-    transition: all 0.3s ease;
-    list-style: none;
-    padding: 8px 16px;
-    border-radius: 12px;
-    border: 1px solid #838286;
-    background-color: rgba(235, 255, 243, 0.05);
+  transition: all 0.3s ease;
+  list-style: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid #838286;
+  background-color: rgba(235, 255, 243, 0.05);
 }
 
 .slot-categories ul li a {
-    font-weight: 500;
-    font-size: 14px;
-    color: #838286;
-    text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: #838286;
+  text-decoration: none;
 }
 
 .slot-categories ul li:hover {
-    border-color: transparent;
-    background-color: #35E275;
+  border-color: transparent;
+  background-color: #35E275;
 }
 
 .slot-categories ul li a:hover {
-    color: inherit;
+  color: inherit;
 }
 
 .slot-categories ul li:hover a {
-    color: #2C5F67;
+  color: #2C5F67;
 }
 
 .slot-categories ul li.active {
-    border-color: transparent;
-    background-color: #3BFB82;
+  border-color: transparent;
+  background-color: #3BFB82;
 }
 
 .slots .games-content {
-    width: 100%;
-    float: left;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  width: 100%;
+  float: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .slots .games-content .wrapper .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 16px;
 }
 
 .slots .games-content .wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slots-bg {
-    transition: opacity 0.5s ease;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
+  transition: opacity 0.5s ease;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 
 .slots-card {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
 .slots-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .slots-card .slots-name h5 {
-    font-weight: bold;
-    color: white;
+  font-weight: bold;
+  color: white;
 }
 
 .slots-card .slots-name .thumbnail {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .slots-card:hover .slots-name {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slots-card:hover .slots-bg {
-    background-color: #3BFB82;
-    mix-blend-mode: multiply;
-    opacity: 1;
+  background-color: #3BFB82;
+  mix-blend-mode: multiply;
+  opacity: 1;
 }
 
 .show-more {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .show-more button {
-    padding: 8px 16px;
-    border-radius: 4px;
-    background-color: rgba(235, 255, 243, 0.05);
-    color: white;
-    min-width: 120px;
-    border: 1px solid #838286;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: rgba(235, 255, 243, 0.05);
+  color: white;
+  min-width: 120px;
+  border: 1px solid #838286;
 }
 
 .show-more button:hover {
-    background-color: #35E275;
-    border-color: transparent;
+  background-color: #35E275;
+  border-color: transparent;
+}
+
+/* Dropdown container styling */
+.dropdown-container {
+  position: relative;
+
+  width: 200px;
+}
+
+.provderToggleBtn {
+  width: 161px;
+  transition: all 0.3s ease-in !important;
+}
+
+.provderToggleBtn.active {
+  background-color: #F48919 !important;
+  color: #fff;
+}
+
+.provider_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown-btn {
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, .02) !important;
+  border-radius: 18px !important;
+  border: 1px solid rgba(255, 255, 255, .12) !important;
+  padding: 8px 30px 8px 30px !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 185px;
+  top: 59px;
+  background-color: rgba(0, 0, 0, .55);
+  border-radius: 10px;
+  z-index: 1000;
+  color: white;
+}
+
+.provider_name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: calc(100% - 63px);
+
+}
+
+.dropdown-content.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-provider-main {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.search-provider-main input {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .1);
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  transition: .3s all;
+  color: rgba(255, 255, 255, .7) !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.dropdown-content ::-webkit-scrollbar {
+  background-color: transparent !important;
+}
+
+.search-provider-main input::placeholder {
+  color: white;
+}
+
+.search-provider-main input:focus {
+  background-color: #fff;
+  color: black !important;
+}
+
+.search-provider {
+  background-color: #3a3a3a;
+  color: white;
+  border: 1px solid #666;
+  border-radius: 5px;
+}
+
+.provider-list {
+  max-height: 261px;
+  overflow-y: auto;
+
+}
+
+.provider-list::before {
+  content: '';
+  font-family: slotella;
+  position: absolute;
+  top: -11px;
+  color: rgba(26, 35, 58, .55);
+  line-height: 16px;
+  left: calc(50% - 5px);
+  font-size: 16px;
+}
+
+.provider-item {
+  padding: 0 10px 0 15px !important;
+  height: 33px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.provider-item:hover {
+  background-color: rgba(255, 255, 255, .05);
+}
+
+
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #bdc3c7;
+  width: 18px;
+  height: 18px;
+  margin-right: -12px;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+  background-color: transparent;
+
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+
+.custom-checkbox:checked::before {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #ff6b00;
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.custom-checkbox:checked {
+  border-style: 2px solid #bdc3c7;
+  border: none;
+  background-color: #fff;
+}
+
+.provider-count {
+  color: #aaa;
+  width: 20px;
+  text-align: right;
+}
+
+.clear-all {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
 }
 
 @media only screen and (min-width: 1815px) {
-    .slots .games-content .wrapper .cards {
-        grid-template-columns: repeat(7, 1fr);
-    }
+  .slots .games-content .wrapper .cards {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }

@@ -504,7 +504,8 @@ input:checked+.slider:before {
 }
 
 ::-webkit-scrollbar {
-    width: 6px
+    width: 6px;
+    background:black
 }
 
 ::-webkit-scrollbar-track {
@@ -512,7 +513,7 @@ input:checked+.slider:before {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(93, 96, 114, .25);
+    background: #27292b;
     border-radius: 3px;
 }
 

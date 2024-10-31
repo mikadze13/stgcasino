@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/slots.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <title>Document</title>
 </head>
 
@@ -108,7 +109,8 @@
                 </div>
             </header>
             <!-- REGISTER LOGIN MODAL -->
-            <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
+            <div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content auth_modal__content">
                         <div class="modal-body authmodalBody">
@@ -158,8 +160,8 @@
                             </div>
                         </div>
 
-                        <div class="col-6 col-lg-9 p-right-7 d-flex">
-                            <div class="slot-categories">
+                        <div class="slot-categories">
+                            <div class="col-6 col-lg-9 p-right-7 ">
                                 <ul>
                                     <li class="active">
                                         <a href="javascript:void(0)">ყველა</a>
@@ -180,7 +182,26 @@
                                         <a href="javascript:void(0)">ტურნირი</a>
                                     </li>
                                 </ul>
+
+
+
                                 <div class="overlay"></div>
+                            </div>
+                            <div class="col-6 col-lg-3 p-left-7 provider_container">
+                                <div class="dropdown-container">
+                                    <button class="dropdown-btn btn btn-warning text-white provderToggleBtn"
+                                        onclick="toggleDropdown()">Providers 0 <img src="/assets/icons/down.png" alt=""
+                                            class="arrow"></button>
+                                    <div class="dropdown-content shadow-lg">
+                                        <div class="search-provider-main">
+                                            <input type="text" class="" placeholder="Search Provider" />
+                                        </div>
+                                        <div class="provider-list">
+
+                                        </div>
+                                        <button class="clear-all w-100 mt-2">Clear All</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -579,16 +600,29 @@
                     </div>
                     <div class="footer-line"></div>
                     <div class="footer-second">
-                        <p class="footer-text"> Lorem ipsum dolor sit amet consectetur. Sit pharetra vel vestibulum turpis quam sit auctor. Volutpat dui nisl laoreet eu sit ac tortor. Malesuada netus urna montes volutpat morbi ornare sed tincidunt. Sed dictum pulvinar id nisi
-                            montes venenatis lacus quam. Nisi cursus a habitant vel nulla viverra ullamcorper ac nunc. Egestas odio etiam consectetur mauris egestas lorem nam gravida. Justo sit ut tempor nulla enim nec cras. Adipiscing morbi sed dictum
-                            accumsan nulla ut lacus mattis. Natoque sed dictumst tincidunt donec. Morbi lectus bibendum nibh quis. Enim fermentum quam rhoncus tincidunt ut interdum augue morbi. Elit arcu ut amet iaculis habitasse velit at sit facilisis.
-                            Pellentesque nibh et nec et. Dolor ut quam maecenas sociis. Nisl diam aenean tempor morbi ornare sagittis. Sed ipsum interdum velit congue. Amet interdum nec aliquam lorem. In ridiculus aenean dapibus senectus proin. Donec
-                            aliquam semper feugiat facilisis. Tellus at ligula aliquet vel nulla pharetra lacus ipsum. Fames mi cursus volutpat amet pellentesque. Mattis eu cras id facilisi commodo sit dolor. Consectetur felis enim eget magna in duis
-                            quisque. Cum a molestie eu mauris ut posuere ultricies. Imperdiet nibh nisi dolor mi molestie lacus. </p>
+                        <p class="footer-text"> Lorem ipsum dolor sit amet consectetur. Sit pharetra vel vestibulum
+                            turpis quam sit auctor. Volutpat dui nisl laoreet eu sit ac tortor. Malesuada netus urna
+                            montes volutpat morbi ornare sed tincidunt. Sed dictum pulvinar id nisi
+                            montes venenatis lacus quam. Nisi cursus a habitant vel nulla viverra ullamcorper ac nunc.
+                            Egestas odio etiam consectetur mauris egestas lorem nam gravida. Justo sit ut tempor nulla
+                            enim nec cras. Adipiscing morbi sed dictum
+                            accumsan nulla ut lacus mattis. Natoque sed dictumst tincidunt donec. Morbi lectus bibendum
+                            nibh quis. Enim fermentum quam rhoncus tincidunt ut interdum augue morbi. Elit arcu ut amet
+                            iaculis habitasse velit at sit facilisis.
+                            Pellentesque nibh et nec et. Dolor ut quam maecenas sociis. Nisl diam aenean tempor morbi
+                            ornare sagittis. Sed ipsum interdum velit congue. Amet interdum nec aliquam lorem. In
+                            ridiculus aenean dapibus senectus proin. Donec
+                            aliquam semper feugiat facilisis. Tellus at ligula aliquet vel nulla pharetra lacus ipsum.
+                            Fames mi cursus volutpat amet pellentesque. Mattis eu cras id facilisi commodo sit dolor.
+                            Consectetur felis enim eget magna in duis
+                            quisque. Cum a molestie eu mauris ut posuere ultricies. Imperdiet nibh nisi dolor mi
+                            molestie lacus. </p>
                     </div>
                     <div class="footer-line"></div>
                     <div class="footer-third">
-                        <p class="footer-text"> Lorem ipsum dolor sit amet consectetur. Mauris ante lectus risus eu. Nisl sit quis consectetur maecenas phasellus urna. Magna at arcu nunc netus arcu interdum. Neque maecenas non sapien sagittis ac fusce. Fermentum euismod neque
+                        <p class="footer-text"> Lorem ipsum dolor sit amet consectetur. Mauris ante lectus risus eu.
+                            Nisl sit quis consectetur maecenas phasellus urna. Magna at arcu nunc netus arcu interdum.
+                            Neque maecenas non sapien sagittis ac fusce. Fermentum euismod neque
                             enim habitant. </p>
                     </div>
                     <div class="footer-line"></div>
@@ -600,15 +634,21 @@
         </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const slotCards = document.querySelectorAll('.slots-card');
 
             slotCards.forEach(card => {
-                card.addEventListener('click', function() {
+                card.addEventListener('click', function () {
                     window.location.href = 'http://127.0.0.1:5500/pages/game.html';
                 });
             });
@@ -616,10 +656,49 @@
             const allGames = document.querySelectorAll('.custom-controls_left');
 
             allGames.forEach(game => {
-                game.addEventListener('click', function() {
+                game.addEventListener('click', function () {
                     window.location.href = 'http://127.0.0.1:5500/pages/slots.html';
                 });
             });
+        });
+
+
+        function toggleDropdown() {
+            document.querySelector(".dropdown-content").classList.toggle("show");
+        }
+
+        // Close the dropdown only if clicked outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-btn') && !event.target.closest('.dropdown-content')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        const providerList = document.querySelector('.provider-list');
+        const randomNum = [223, 44, 27, 432, 231, 435, 98]
+        var randomValue;
+        document.addEventListener('DOMContentLoaded', function () {
+            for (var i = 0; i < 50; i++) {
+                randomValue = randomNum[Math.floor(randomNum.length * Math.random())];
+                providerList.insertAdjacentHTML('beforeend', `
+            
+            <label class="provider-item d-flex justify-content-between align-items-center">
+                <input type="checkbox" class="custom-checkbox" onclick="event.stopPropagation()"> <span
+                                                    class="provider_name">Pragmatic Play</span> <span
+                                                    class="provider-count">${randomValue}</span>
+           </label>`)
+            }
+        })
+
+        const providerButton = document.querySelector('.provderToggleBtn');
+        providerButton.addEventListener('click', function () {
+            providerButton.classList.toggle('active');
         });
     </script>
 </body>
