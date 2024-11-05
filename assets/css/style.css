@@ -100,7 +100,6 @@ body {
     margin-left: 240px;
 }
 
-
 /* ***************************** header BEGIN ******************************/
 
 .header {
@@ -505,7 +504,7 @@ input:checked+.slider:before {
 
 ::-webkit-scrollbar {
     width: 6px;
-    background:black
+    background: black
 }
 
 ::-webkit-scrollbar-track {
@@ -622,7 +621,9 @@ section.main-carousels {
     position: static;
     padding: 0 16px;
 }
-
+.slick-initialized .slick-slide{
+    margin: 0px 10px;
+}
 
 /* *********************************** LOGIN REGISTER **************************  */
 
@@ -632,6 +633,9 @@ section.main-carousels {
     width: 100%;
     text-align: center;
 }
+.slick-slide img{
+    width: 100%;
+}
 
 .login-box form label,
 #registerForm form label {
@@ -639,6 +643,18 @@ section.main-carousels {
     text-align: left;
     margin-bottom: -7px;
     color: white;
+}
+
+/* #authModal.show{
+    display: flex !important;
+    align-items: center;
+} */
+.banner_desktop__img {
+    display: flex;
+
+} 
+.banner_mobile__img {
+    display: none;
 }
 
 .authmodalBody {
@@ -1053,6 +1069,7 @@ tr:hover {
 }
 
 @media (min-width: 1440px) {
+
     .container,
     .container-lg,
     .container-md,

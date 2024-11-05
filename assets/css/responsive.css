@@ -1,73 +1,130 @@
-@media screen and (max-width:1200px){
-    .responsive_icon{
+@media screen and (max-width:1200px) {
+    .responsive_icon {
         display: inline-block;
-    } 
-    .main{
+    }
+
+    .main {
         width: 100%;
         margin-left: 0;
     }
-    .header{
+
+    .header {
         padding: 18px 16px 18px 16px;
     }
-    section.main-carousels{
+
+    section.main-carousels {
         padding: 0;
-    } 
+    }
+
     .sidebar {
         transform: translateX(-100%);
         opacity: 0;
     }
+
     .sidebar.show {
         transform: translateX(0);
         opacity: 1;
         display: flex;
     }
-    .aside_burger_desktop{
+
+    .aside_burger_desktop {
         display: none;
     }
-    .aside_burger{
+
+    .aside_burger {
         display: flex;
     }
 }
-@media screen and (max-width:768px){
-    .header input{
-        padding:10px 0px 10px 68px; 
+
+@media screen and (max-width:768px) {
+    .header input {
+        padding: 10px 0px 10px 68px;
     }
-    .header .actions button, select{
-        margin-left:0px;
+
+    .header .actions button,
+    select {
+        margin-left: 0px;
         padding: 10px 10px;
     }
+
+    .banner_desktop__img {
+        display: none;
+
+    }
+
+    .banner_mobile__img {
+        display: flex;
+    }
 }
-@media screen and (max-width:575px){
-    .banner div{
+
+@media screen and (max-width:575px) {
+    .banner div {
         height: 100%;
     }
-    .main-carousels .carousel-container{
+
+    .main-carousels .carousel-container {
         height: 283px;
     }
-    .header input{
+
+    .header input {
         width: 172px;
-        padding: 10px 0px 10px 51px; 
+        padding: 10px 0px 10px 51px;
     }
-    .header>div span{
+
+    .header>div span {
         width: 48px;
     }
-    .header .actions .cadastro img{
+
+    .header .actions .cadastro img {
         padding-left: 0px;
     }
-    .footer-first{
+
+    .footer-first {
         flex-wrap: wrap;
     }
-         
-}
-@media screen and (max-width:425px){
+
     .position-relative.d-inline-block.searchInpCont {
         display: none !important;
     }
-    .personal-categories{
-        overflow-x:scroll ;
-        
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+
+    .top-games,
+    .recently-played,
+    .providers {
+        height: auto !important;
     }
+}
+
+@media screen and (max-width:425px) {
+    .personal-categories {
+        overflow-x: scroll;
+
+    }
+
     ::-webkit-scrollbar {
         height: 4px
+    }
+
+    .header .actions button:not(.user-button),
+    select {
+        padding: 10px 10px;
+        margin-left: 0px;
+    }
+
+    .carousel-container.top-games .custom-controls,
+    .carousel-container.recently-played .custom-controls,
+    .carousel-container.providers .custom-controls {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:321px) {
+
+    .top-games,
+    .recently-played,
+    .providers {
+        height: 206px !important;
     }
 }
